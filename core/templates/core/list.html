@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for picture in object_list %}
+<div id="img">
+    <img src="{{ picture.image.url }}" alt="{{ picture.name }}" id="pt-img" />
+</div>
+{% endfor %}
+{% endblock %}
